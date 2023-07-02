@@ -46,10 +46,10 @@ in
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_GB.UTF-8";
 
   # Set your time zone.
-  time.timeZone = "Europe/Warsaw";
+  time.timeZone = "Europe/London";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -75,26 +75,15 @@ in
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
 
-  # Enable Docker & VirtualBox support.
-  virtualisation = {
-    docker = {
-      enable = true;
-      autoPrune = {
-        enable = true;
-        dates = "weekly";
-      };
-      daemon.settings = {
-        bip = "169.254.0.1/16";
-      };
-    };
+  # Enable VirtualBox support.
+#  virtualisation = {
+#    virtualbox.host = {
+#      enable = false;
+#      enableExtensionPack = false;
+#    };
+#  };
 
-    virtualbox.host = {
-      enable = false;
-      enableExtensionPack = false;
-    };
-  };
-
-  users.extraGroups.vboxusers.members = [ "gvolpe" ];
+#  users.extraGroups.vboxusers.members = [ "moonlander" ];
 
   security.rtkit.enable = true;
 
@@ -166,9 +155,9 @@ in
   programs.fish.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.gvolpe = {
+  users.users.moonlander = {
     isNormalUser = true;
-    extraGroups = [ "docker" "networkmanager" "wheel" "scanner" "lp" ]; # wheel for ‘sudo’.
+    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" ]; # wheel for ‘sudo’.
     shell = pkgs.fish;
   };
 
@@ -205,7 +194,7 @@ in
       auto-optimise-store = true;
 
       # Required by Cachix to be used as non-root user
-      trusted-users = [ "root" "gvolpe" ];
+      trusted-users = [ "root" "moonlander" ];
 
       experimental-features = [ "nix-command" "flakes" ];
       warn-dirty = false;

@@ -227,13 +227,13 @@
       "locked": {
         "lastModified": 1640180970,
         "narHash": "sha256-9uuM5fwWl98uDrTHet4MdVpRZYLIQfW0HOfTxGb2o5o=",
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "theme-bobthefish",
         "rev": "e4418e8a7de9fbd6b5053a9b9009aa84a48398cd",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "theme-bobthefish",
         "type": "github"
       }
@@ -781,13 +781,13 @@
       "locked": {
         "lastModified": 1665313334,
         "narHash": "sha256-M2H8ChUWTdFAUC5omA4KNzRQCgh4bb1PHcOn63U7wMo=",
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "mind.nvim",
         "rev": "2e40883c9e75ac4e5e178dd3a38f1280c2469b7e",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "mind.nvim",
         "type": "github"
       }
@@ -863,13 +863,13 @@
       "locked": {
         "lastModified": 1686474159,
         "narHash": "sha256-TRVV6HiJoxgRtW4MgsDUQQlkiPQMkR5TrrU2/F/6uqE=",
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "neovim-flake",
         "rev": "950b3444697d57b327a7a6f012906a588981befd",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "neovim-flake",
         "type": "github"
       }
@@ -1049,13 +1049,13 @@
       "locked": {
         "lastModified": 1672240039,
         "narHash": "sha256-lmct89fYDOr9YdWVvdJgklv/7WttRSiDAkoi2cvvAW4=",
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "nmd",
         "rev": "a59e840c2e8d54415485f349760e1350cb80d911",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "nmd",
         "type": "github"
       }
@@ -1128,13 +1128,13 @@
       "locked": {
         "lastModified": 1681191932,
         "narHash": "sha256-aY9EMhx3QAF5hKyiEXKMNP0cDSrQiJYU9UWBO6K8J7I=",
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "ChatGPT.nvim",
         "rev": "4e68f755ffc9b8657525a912f6e4ebf5a8af7cc6",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "ChatGPT.nvim",
         "type": "github"
       }
@@ -1710,13 +1710,13 @@
       "locked": {
         "lastModified": 1681572273,
         "narHash": "sha256-DA4veoacCIKg9ZXjq1nKEyGKG62n/Rkm4n9TNkkYEYA=",
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "telescope-media-files.nvim",
         "rev": "f0b0220db686c54fadb07cbb93e1ecbf764628ba",
         "type": "github"
       },
       "original": {
-        "owner": "gvolpe",
+        "owner": "moonlander",
         "repo": "telescope-media-files.nvim",
         "type": "github"
       }

@@ -55,7 +55,7 @@ let
     [module/clickable-github]
     inherit = module/github
     token = ''${file:${../../secrets/github-token}}
-    user = gvolpe
+    user = moonlander
     label = %{A1:${openGithub}:}  %notifications%%{A}
   '';
 

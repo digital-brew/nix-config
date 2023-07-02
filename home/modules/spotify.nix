@@ -14,7 +14,7 @@ let
   };
 in
 {
-  meta.maintainers = [ hm.maintainers.gvolpe ];
+  meta.maintainers = [ hm.maintainers.moonlander ];
 
   options.programs.spotify = {
     enable = mkEnableOption "Play music from the Spotify music service.";

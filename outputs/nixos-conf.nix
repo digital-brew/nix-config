@@ -26,6 +26,15 @@ let
   };
 in
 {
+  macbook = nixosSystem {
+    inherit lib pkgs system;
+    specialArgs = { inherit inputs; };
+    modules = [
+      ../system/machine/macbook
+      ../system/configuration.nix
+    ];
+  };
+
   dell-xps = nixosSystem {
     inherit lib pkgs system;
     specialArgs = { inherit inputs; };

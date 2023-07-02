@@ -1,5 +1,5 @@
 {
-  description = "gvolpe's Home Manager & NixOS configurations";
+  description = "moonlander's Home Manager & NixOS configurations";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -19,19 +19,19 @@
     };
 
     #sxm-flake = {
-      #url = git+file:///home/gvolpe/workspace/sxm/sxm-flake;
+      #url = git+file:///home/moonlander/workspace/sxm/sxm-flake;
     #};
 
     neovim-flake = {
-      #url = git+file:///home/gvolpe/workspace/neovim-flake;
-      url = github:gvolpe/neovim-flake;
+      #url = git+file:///home/moonlander/workspace/neovim-flake;
+      url = github:moonlander/neovim-flake;
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Fish shell
 
     fish-bobthefish-theme = {
-      url = github:gvolpe/theme-bobthefish;
+      url = github:moonlander/theme-bobthefish;
       flake = false;
     };
 

@@ -27,8 +27,8 @@ pre_home() {
 post_home() {
   # Set user's profile picture for Gnome3
   echo "Setting profile picture for the accounts service"
-  sudo cp imgs/gvolpe.png /var/lib/AccountsService/icons/gvolpe
-  sudo echo "Icon=/var/lib/AccountsService/icons/gvolpe" >> /var/lib/AccountsService/users/gvolpe
+  sudo cp imgs/moonlander.png /var/lib/AccountsService/icons/moonlander
+  sudo echo "Icon=/var/lib/AccountsService/icons/moonlander" >> /var/lib/AccountsService/users/moonlander
 
   # Set screenlock wallpaper
   echo "Setting screen-lock wallpaper"
@@ -36,10 +36,11 @@ post_home() {
 }
 
 build_ci_home() {
-  nix build .#homeConfigurations.gvolpe-edp.activationPackage -L
+  nix build .#homeConfigurations.moonlander-edp.activationPackage -L
 }
 
 build_ci_system() {
+  nix build .#nixosConfigurations.macbook.config.system.build.toplevel -L
   nix build .#nixosConfigurations.dell-xps.config.system.build.toplevel -L
   nix build .#nixosConfigurations.tongfang-amd.config.system.build.toplevel -L
 }

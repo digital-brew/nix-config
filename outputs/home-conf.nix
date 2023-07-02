@@ -72,6 +72,6 @@ let
   );
 in
 {
-  gvolpe-edp = mkHome { hidpi = false; };
-  gvolpe-hdmi = mkHome { hidpi = true; };
+  moonlander-edp = mkHome { hidpi = false; };
+  moonlander-hdmi = mkHome { hidpi = true; };
 }
