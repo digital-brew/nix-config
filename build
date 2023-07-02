@@ -36,7 +36,7 @@ post_home() {
 }
 
 build_ci_home() {
-  nix build .#homeConfigurations.moonlander-edp.activationPackage -L
+  nix build .#homeConfigurations.digital-brew-edp.activationPackage -L
 }
 
 build_ci_system() {

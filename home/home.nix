@@ -64,6 +64,9 @@ let
     xsel                 # clipboard support (also for neovim)
     zoom-us              # message client
 
+    alacritty
+    kitty
+
     # haskell packages
     haskellPackages.nix-tree # visualize nix dependencies
   ];
