@@ -109,7 +109,7 @@ $ nix flake metadata github:digital-brew/nix-config
 The full home configuration is not yet fully automated but the NixOS configuration can be installed by running the following command.
 
 ```console
-$ nixos-rebuild switch --flake github:digital-brew/nix-config#tongfang-amd
+$ nixos-rebuild switch --flake github:digital-brew/nix-config#macbook
 ```
 
 Beware that the `hardware-configuration.nix` file is the result of the hardware scan of the specific machine and might not be suitable for yours.
