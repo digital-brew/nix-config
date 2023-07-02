@@ -29,10 +29,10 @@
 
   services.xserver = {
     xrandrHeads = [
-      { output = "Virtual-1";
+      { output = "eDP-1";
         primary = true;
         monitorConfig = ''
-          Option "PreferredMode" "1920x1080"
+          Option "PreferredMode" "1440x900"
           Option "Position" "0 0"
         '';
       }
@@ -45,6 +45,7 @@
     ];
     resolutions = [
       { x = 2048; y = 1152; }
+      { x = 1440; y = 900; }
       { x = 1920; y = 1080; }
       { x = 2560; y = 1440; }
       { x = 3072; y = 1728; }
