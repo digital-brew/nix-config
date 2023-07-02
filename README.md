@@ -17,7 +17,7 @@ My current — and always evolving — NixOS configuration files, home-manager, 
 
 ![demo](imgs/demo.png)
 
-NOTE: My new neovim configuration is now a separate flake: https://github.com/moonlander/neovim-flake
+NOTE: My new neovim configuration is now a separate flake: https://github.com/digital-brew/neovim-flake
 
 ## Programs
 
@@ -89,8 +89,8 @@ Here is an overview of the folders' structure:
 You can have a look at the available flake outputs before getting started.
 
 ```console
-$ nix flake show github:moonlander/nix-config
-github:moonlander/nix-config/0161ea3bd15e0cd06696f27bd60c588991305b20
+$ nix flake show github:digital-brew/nix-config
+github:digital-brew/nix-config/0161ea3bd15e0cd06696f27bd60c588991305b20
 ├───homeConfigurations: unknown
 └───nixosConfigurations
     ├───macbook: NixOS configuration
@@ -101,7 +101,7 @@ github:moonlander/nix-config/0161ea3bd15e0cd06696f27bd60c588991305b20
 As well as all the declared flake inputs.
 
 ```console
-$ nix flake metadata github:moonlander/nix-config
+$ nix flake metadata github:digital-brew/nix-config
 ```
 
 ### NixOS
@@ -109,7 +109,7 @@ $ nix flake metadata github:moonlander/nix-config
 The full home configuration is not yet fully automated but the NixOS configuration can be installed by running the following command.
 
 ```console
-$ nixos-rebuild switch --flake github:moonlander/nix-config#tongfang-amd
+$ nixos-rebuild switch --flake github:digital-brew/nix-config#tongfang-amd
 ```
 
 Beware that the `hardware-configuration.nix` file is the result of the hardware scan of the specific machine and might not be suitable for yours.
@@ -119,7 +119,7 @@ Beware that the `hardware-configuration.nix` file is the result of the hardware 
 A fresh install requires the creation of certain directories so this has not been automated yet (see `build` script file). However, if you omit those steps, the entire HM configuration can also be built as any other flake.
 
 ```console
-$ nix build github:moonlander/nix-config#homeConfigurations.moonlander-hdmi.activationPackage
+$ nix build github:digital-brew/nix-config#homeConfigurations.digital-brew-hdmi.activationPackage
 $ result/activate
 ```
 
@@ -128,7 +128,7 @@ $ result/activate
 On a fresh NixOS installation, run the following commands.
 
 ```console
-$ nix flake clone github:moonlander/nix-config --dest /choose/a/path
+$ nix flake clone github:digital-brew/nix-config --dest /choose/a/path
 $ nix run nixpkgs#git-crypt unlock
 $ ./build fresh-install # requires sudo
 ```
@@ -145,6 +145,6 @@ sudo result/bin/switch-to-configuration switch
 Or for Home Manager.
 
 ```console
-$ nix build .#homeConfigurations.moonlander-hdmi.activationPackage
+$ nix build .#homeConfigurations.digital-brew-hdmi.activationPackage
 $ result/activate
 ```

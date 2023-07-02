@@ -13,7 +13,6 @@
       grub = {
         enable  = true;
         device = "/dev/sda"; # or "nodev" for efi only
-        version = 2;
       };
     };
   };
@@ -30,7 +29,7 @@
 
   services.xserver = {
     xrandrHeads = [
-      { output = "HDMI-1";
+      { output = "Virtual-1";
         primary = true;
         monitorConfig = ''
           Option "PreferredMode" "1920x1080"
