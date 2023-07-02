@@ -6,16 +6,20 @@
     ./hardware-configuration.nix
   ];
 
+  # Use the systemd-boot EFI boot loader
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
   # Use the GRUB 2 boot loader.
-  boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
-    loader = {
-      grub = {
-        enable  = true;
-        device = "/dev/sda"; # or "nodev" for efi only
-      };
-    };
-  };
+#   boot = {
+#     kernelPackages = pkgs.linuxPackages_latest;
+#     loader = {
+#       grub = {
+#         enable  = true;
+#         device = "/dev/sda"; # or "nodev" for efi only
+#       };
+#     };
+#   };
 
   networking = {
     hostName = "DBi9XRL";
