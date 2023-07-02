@@ -34,18 +34,18 @@ rebuild_home_edp() {
 rebuild_home_hdmi() {
   nix_build ".#homeConfigurations.digital-brew-hdmi.activationPackage" $1
   activate_hm
-  xrandr --output HDMI-A-0 --mode 3840x2160 --rate 30.00
+  xrandr --output HDMI-A-0 --mode 1920x1080 --rate 30.00
   restart_polybar
 }
 
 rebuild_system() {
-  # nix build .#nixosConfigurations.tongfang-amd.config.system.build.toplevel
+  # nix build .#nixosConfigurations.macbook.config.system.build.toplevel
   # sudo result/bin/switch-to-configuration switch
-  sudo nixos-rebuild switch --flake .#tongfang-amd
+  sudo nixos-rebuild switch --flake .#macbook
 }
 
 rebuild_vm() {
-  sudo nixos-rebuild build-vm --flake .#tongfang-amd
+  sudo nixos-rebuild build-vm --flake .#macbook
 }
 
 restart_X() {
